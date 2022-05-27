@@ -1,0 +1,68 @@
+1.class car{
+    void view(){
+        System.out.println("It is black in colour");
+    }
+}
+class Main extends car{
+    public static void main(String[]args){
+        Main obj=new Main();
+        obj.view();
+    }
+}
+
+
+
+2.class car{
+    void brand(){
+        System.out.println("Brand of car is hyundai");
+    }
+}
+class view extends car{
+    void colour(){
+        System.out.println("It is in black colour");
+    }
+}
+class speed extends car{
+    void distance(){
+        System.out.println("distance is 120kmph");
+    }
+}
+class Main{
+    public static void main(String[]args){
+        speed speed=new speed();
+        speed.distance();
+        
+    view view=new view();
+        view.colour();
+    }
+}
+
+
+
+
+3.class car{
+    void brand(){
+        System.out.println("Brand of the car is hyundai");
+    }
+}
+class view extends car{
+    void colour(){
+        System.out.println("It is in black colour");
+    }
+}
+class speed extends view{
+    void distance(){
+        System.out.println("speed is 120kmph");
+    }
+}
+class Main{
+    public static void main(String[]args){
+        speed speed=new speed();
+        speed.distance();
+        speed.brand();
+        
+        view view=new view();
+        view.colour();
+    }
+}
+    
